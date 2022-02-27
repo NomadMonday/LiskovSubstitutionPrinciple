@@ -1,12 +1,10 @@
-from employee import Employee
+from abc_manager import ABCManager
+from abc_base_employee import ABCBaseEmployee
 
-class CEO(Employee):
+class CEO(ABCBaseEmployee, ABCManager):
     def calculate_per_hour_rate(self, rank):
         base_amount = 150
         self.salary = base_amount * rank
-
-    def assign_manager(self, manager):
-        raise Exception("The CEO has no manager.")
 
     def generage_performance_review(self):
         # Simulate reviewing a direct report.

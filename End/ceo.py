@@ -1,7 +1,6 @@
 from abc_manager import ABCManager
-from abc_base_employee import ABCBaseEmployee
 
-class CEO(ABCBaseEmployee, ABCManager):
+class CEO(ABCManager):
     def calculate_per_hour_rate(self, rank):
         base_amount = 150
         self.salary = base_amount * rank

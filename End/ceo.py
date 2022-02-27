@@ -6,7 +6,7 @@ class CEO(ABCBaseEmployee, ABCManager):
         base_amount = 150
         self.salary = base_amount * rank
 
-    def generage_performance_review(self):
+    def generate_performance_review(self):
         # Simulate reviewing a direct report.
         print("I'm reviewing a direct report's performance.")
 

@@ -8,7 +8,7 @@ class CEO(Employee):
     def assign_manager(self, manager):
         raise Exception("The CEO has no manager.")
 
-    def generage_performance_review(self):
+    def generate_performance_review(self):
         # Simulate reviewing a direct report.
         print("I'm reviewing a direct report's performance.")
 
